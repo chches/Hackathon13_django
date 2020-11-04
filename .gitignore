@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+requirements.txt
+manage.py
+market_rosita/migrations/0001_initial.py
+market_rosita/migrations/0002_product.py
