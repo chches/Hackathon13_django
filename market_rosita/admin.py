@@ -9,6 +9,8 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('description', 'stock', 'price', 'id_brand', 'id_category')
+    list_filter = ('id_brand', 'id_category')
+    search_fields = ('description', 'unit_measure_sales')
 
 # Register your models here.
 admin.site.register(Brand, BrandAdmin)
